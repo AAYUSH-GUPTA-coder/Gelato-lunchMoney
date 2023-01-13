@@ -1,27 +1,21 @@
-require("@nomiclabs/hardhat-waffle");
-require("@nomiclabs/hardhat-etherscan");
-require("dotenv").config();
+require("@nomicfoundation/hardhat-toolbox");
+require("dotenv").config({ path: ".env" });
 
-const MUMBAI_RPC_URL = process.env.MUMBAI_RPC_URL;
-const MUMBAI_PRIVATE_KEY = process.env.MUMBAI_PRIVATE_KEY;
-const POLYGONSCAN_API_KEY = process.env.POLYGONSCAN_API_KEY;
+const QUICKNODE_MUMBAI_HTTP_URL = process.env.QUICKNODE_MUMBAI_HTTP_URL;
+const PRIVATE_KEY = process.env.PRIVATE_KEY;
+const POLYGONSCAN_KEY = process.env.POLYGONSCAN_KEY;
 
 module.exports = {
-  solidity: "0.8.0",
-  defaultNetwork: "hardhat",
+  solidity: "0.8.4",
   networks: {
-    hardhat: {
-      chainId: 31337,
-      blockConfirmation: 1,
-    },
     mumbai: {
-      url: MUMBAI_RPC_URL,
-      accounts: [MUMBAI_PRIVATE_KEY],
+      url: QUICKNODE_MUMBAI_HTTP_URL,
+      accounts: [PRIVATE_KEY],
     },
   },
   etherscan: {
     apiKey: {
-      polygonMumbai: POLYGONSCAN_API_KEY,
+      polygonMumbai: POLYGONSCAN_KEY,
     },
   },
 };
