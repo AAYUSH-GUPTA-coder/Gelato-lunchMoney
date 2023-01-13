@@ -1,5 +1,11 @@
+/*
+@author Aayush Gupta, Github: https://github.com/AAYUSH-GUPTA-coder, Twitter: https://twitter.com/Aayush_gupta_ji
+
+Smart contract to send Lunch money to your Kid and automate the `transferLunchMoney` function with Galeto network
+ */
+
 // SPDX-License-Identifier: MIT
-pragma solidity ^0.8.0;
+pragma solidity ^0.8.4;
 
 error ONLYOWNER_CAN_CALL_THIS_FUNCTION();
 error ADDRESS_CANT_BE_ZERO();
