@@ -1,17 +1,27 @@
 {
-  "name": "Galeto-lunchMoney",
+  "name": "galetolunchmoney",
   "version": "1.0.0",
   "main": "index.js",
   "repository": "https://github.com/AAYUSH-GUPTA-coder/Galeto-lunchMoney.git",
   "license": "MIT",
   "devDependencies": {
+    "@nomicfoundation/hardhat-chai-matchers": "^1.0.0",
+    "@nomicfoundation/hardhat-network-helpers": "^1.0.0",
     "@nomiclabs/hardhat-ethers": "^2.2.2",
     "@nomiclabs/hardhat-etherscan": "^3.1.5",
     "@nomiclabs/hardhat-waffle": "^2.0.3",
+    "@typechain/hardhat": "^6.1.2",
+    "@types/mocha": ">=9.1.0",
     "chai": "^4.3.7",
     "dotenv": "^16.0.3",
-    "ethereum-waffle": "^3.4.4",
     "ethers": "^5.7.2",
-    "hardhat": "^2.12.6"
+    "hardhat": "^2.12.6",
+    "hardhat-gas-reporter": "^1.0.8",
+    "solidity-coverage": "^0.8.1",
+    "ts-node": ">=8.0.0",
+    "typescript": ">=4.5.0"
+  },
+  "dependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^2.0.1"
   }
 }
