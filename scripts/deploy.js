@@ -1,4 +1,5 @@
 const hre = require("hardhat");
+require("@nomiclabs/hardhat-etherscan");
 
 async function main() {
   const Contract = await hre.ethers.getContractFactory("LunchMoney");
