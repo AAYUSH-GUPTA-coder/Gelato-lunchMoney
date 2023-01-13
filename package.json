@@ -3,5 +3,13 @@
   "version": "1.0.0",
   "main": "index.js",
   "repository": "https://github.com/AAYUSH-GUPTA-coder/Galeto-lunchMoney.git",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "@nomiclabs/hardhat-ethers": "^2.2.2",
+    "@nomiclabs/hardhat-waffle": "^2.0.3",
+    "chai": "^4.3.7",
+    "ethereum-waffle": "^3.4.4",
+    "ethers": "^5.7.2",
+    "hardhat": "^2.12.6"
+  }
 }
