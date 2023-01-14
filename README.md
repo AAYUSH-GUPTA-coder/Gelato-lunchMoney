@@ -15,8 +15,8 @@
 ## Quickstart
 
 ```shell
-git clone https://github.com/PatrickAlphaC/hardhat-nft-fcc
-cd hardhat-nft-fcc
+git clone https://github.com/AAYUSH-GUPTA-coder/Galeto-lunchMoney
+cd Galeto-lunchMoney
 yarn
 ```
 
