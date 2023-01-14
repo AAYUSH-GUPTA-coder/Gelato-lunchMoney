@@ -6,7 +6,7 @@ const PRIVATE_KEY = process.env.PRIVATE_KEY;
 const POLYGONSCAN_KEY = process.env.POLYGONSCAN_KEY;
 
 module.exports = {
-  solidity: "0.8.4",
+  solidity: "0.8.7",
   networks: {
     mumbai: {
       url: QUICKNODE_MUMBAI_HTTP_URL,
