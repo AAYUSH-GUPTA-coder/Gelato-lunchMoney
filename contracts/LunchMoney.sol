@@ -20,6 +20,8 @@ contract LunchMoney{
     uint private threshold;
     uint private lastCall;
 
+    event Transfer(address receiver, uint lastCallTimestamp);
+
     constructor() {
         owner = msg.sender;
         lastCall = block.timestamp;
@@ -52,7 +54,7 @@ contract LunchMoney{
     // }
 
     // testing 
-    function setThreshold(uint8 _min) public onlyOwner {
+    function setThreshold(uint256 _min) public onlyOwner {
         threshold = _min * 60 ;
     }
 
@@ -65,6 +67,7 @@ contract LunchMoney{
             revert FAILED_TO_SEND_ETHER();
         }
         lastCall = block.timestamp;
+        emit Transfer(receiver, lastCall);
     }
 
     function withdraw() public onlyOwner {
@@ -72,6 +75,10 @@ contract LunchMoney{
         if(!sent){
             revert FAILED_TO_SEND_ETHER();
         }
+    }
+
+    function getThreshold() public view returns(uint){
+        return threshold;
     }
 
     function getBalance() public view returns(uint){
