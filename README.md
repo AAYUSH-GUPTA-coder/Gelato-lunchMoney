@@ -1,3 +1,8 @@
+# Gelato-lunchMoney
+This repo is a part of the Tutorial. You can learn about this dapp and Gelato network by following the tutorial.
+
+## ✨[Tutorial Link](https://aayushguptaji.hashnode.dev/automate-your-smart-contract-with-gelato)✨
+
 # Getting Started
 
 ## Requirements
