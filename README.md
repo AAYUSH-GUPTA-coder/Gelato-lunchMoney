@@ -22,8 +22,8 @@ This repo is a part of the Tutorial. You can learn about this dapp and Gelato ne
 ## Quickstart
 
 ```shell
-git clone https://github.com/AAYUSH-GUPTA-coder/Galeto-lunchMoney
-cd Galeto-lunchMoney
+git clone https://github.com/AAYUSH-GUPTA-coder/Gelato-lunchMoney
+cd Gelato-lunchMoney
 yarn
 ```
 
